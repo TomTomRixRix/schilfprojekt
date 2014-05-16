@@ -1,0 +1,188 @@
+
+#background {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 1000px;
+	height: 700px;
+	background-image: url(images/hintergrund.png);
+	background-size: cover;
+}
+
+.container {
+	display: block;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	
+}
+
+#sonne{
+	background-image:url(images/sonne.png);
+	background-size:cover;
+	top: 20px;
+	left: 800px;
+}
+
+#wind{
+	background-image:url(images/wind.png);
+	background-size:cover;
+	top: 25px;
+	left: 600px;
+}
+
+#wellen{
+	background-image:url(images/wellen.png);
+	background-size:cover;
+	top: 225px;
+	left: 515px;
+	height:166px;
+	width:170px;
+}
+
+#lufttemp{
+	background-image:url(images/Temperatur);
+	background-size:cover;
+	top: 150px;
+	left: 800px;
+}
+
+#chemWasser{
+	background-image:url(images/Chemie.png);
+	background-size:cover;
+	top: 340px;
+	left: 700px;
+}
+
+
+#wasserTemp{
+	background-image:url(images/Temperatur);
+	background-size:cover;
+	top: 400px;
+	left: 900px;
+}
+
+#truebung{
+	background-image:url(images/truebung.png);
+	background-size:cover;
+	top: 390px; 
+	left: 800px;
+
+}
+
+#stroemung{
+	background-image:url(images/stroehmung.png);
+	background-size:cover;
+	top: 420px;
+	left: 555px;
+}
+
+#chemSediment{
+	background-image:url(images/Stoffe.png);
+	background-size:cover;
+	top: 550px;
+	left: 800px;
+}
+
+#zusammensetzung{
+	background-image:url(images/sediment.png);
+	background-size:cover;
+	top: 550px;
+	left: 600px;
+}
+
+#destruenten{
+	background-image:url(images/Wurm.png);
+	background-size:cover;
+	top: 520px;
+	left: 200px;
+	height: 200px;
+	width: 150px;
+}
+
+#pilzeSediment{
+	background-image:url(images/Pilz.png);
+	background-size:cover;
+	top: 600px;
+	left: 0px;
+}
+
+#pilzeWasser{
+	background-image:url(images/Pilz.png);
+	background-size:cover;
+	top: 460px;
+	left: 0px;
+}
+
+#parasiten{
+	background-image:url(images/kaefer.png);
+	background-size:cover;
+	top: 265px;
+    left: 230px;
+    height: 160px;
+    width: 150px;
+}
+
+#konkurrenten{
+	background-image:url(images/Konkurenz.png);
+	background-size:cover;
+	top: 400px;
+	left: 210px;
+}
+
+#krankheiten{
+	background-image:url(images/Bakterie.png);
+	background-size:cover;
+	top: 150px;
+	left: 210px;
+}
+
+#pilzeLuft{
+    background-image:url(images/Pilz.png);
+	background-size:cover;
+	top: 25px;
+	left: 230px;
+}
+
+#nistplatz{
+	background-image:url(images/Ente.png);
+	background-size:cover;
+	top: 165px;
+	left: 0px;
+	height:250px;
+	width:200px;
+	
+}
+
+#herbivoren{
+	background-image:url(images/Ente1.png);
+	background-size:cover;
+	top: 50px;
+	left: 50px;
+	height:100px;
+	width:95px;
+}
+
+#schilf{
+    background-image:url(images/schilf.png);
+    background-size:cover;
+    top:70px;
+    left:370px;
+    height:550px;
+    width:200px;
+}
+
+
+
+.popOut {
+	display: none;
+	position: absolute;
+	width: 500px;
+	height:auto;
+	background-color: #FFFFFF;
+	border-style:solid;
+	padding:5px;
+	left: 15px;
+	top:100px;
+	z-index:2;
+}

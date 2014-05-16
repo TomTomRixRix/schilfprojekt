@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>LaufzeitIndex2</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+$(function () {
+        $('#container').highcharts({
+            chart: {
+                zoomType: 'xy'
+            },
+            title: {
+                text: 'Stopped Time and Running Hour'
+            },
+            subtitle: {
+                text: 'by Tom Rix'
+            },
+            xAxis: [{
+                categories: ['2nd July', '5th July','6th July','8th July','14th July','16th July'
+				,'18th July','3rd August','6th August','10th August']
+            }],
+            yAxis: [{ // Primary yAxis
+                labels: {
+                    format: '{value} secs',
+                    style: {
+                        color: '#89A54E'
+                    }
+                },
+                title: {
+                    text: 'Stopped Time',
+                    style: {
+                        color: '#89A54E'
+                    }
+                }
+            }, { // Secondary yAxis
+                title: {
+                    text: 'Running Hour',
+                    style: {
+                        color: '#4572A7'
+                    }
+                },
+                labels: {
+                    format: '{value} hour',
+                    style: {
+                        color: '#4572A7'
+                    }
+                },
+                opposite: true
+            }],
+            tooltip: {
+                shared: true
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'left',
+                x: 120,
+                verticalAlign: 'top',
+                y: 100,
+                floating: true,
+                backgroundColor: '#FFFFFF'
+            },
+            series: [{
+                name: 'Running Hour',
+                color: '#4572A7',
+                type: 'column',
+                yAxis: 1,
+                data: [21,10,22,10,12,11,12,21,16,12],
+                tooltip: {
+                    valueSuffix: ' hour'
+                }
+    
+            }, {
+                name: 'Stopped Time',
+                color: '#89A54E',
+                type: 'spline',
+                data: [1155, 1053, 1000, 917, 1082,941,898,1037,997,936],
+                tooltip: {
+                    valueSuffix: 'secs'
+                }
+            }]
+        });
+    });
+    
+
+		</script>
+	</head>
+	<body>
+<script src="../../js/highcharts.js"></script>
+<script src="../../js/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>

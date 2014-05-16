@@ -1,0 +1,42 @@
+<doc>
+<markers>
+	<marker name="Pan Africa Market"  lat="47.608940" lng="-122.340141" type="restaurant"/>
+	<marker name="Buddha Thai and Bar"  lat="47.613590" lng="-122.344391" type="bar"/>
+</markers>
+
+<polygones>
+<polygone name="bermuda dreieck">
+  <point lat="25.774252" lng="-80.190262" ordnungszahl="1"/>
+  <point lat="18.466465" lng="-66.118292" ordnungszahl="2"/>
+  <point lat="32.321384" lng="-64.75737" ordnungszahl="3"/>
+</polygone>
+<polygone name="schilf1">
+	<point lat="53.85488" lng="10.72315" ordnungszahl="1" />
+	<point lat="53.85556" lng="10.72544" ordnungszahl="2" />
+	<point lat="53.85532" lng="10.72739" ordnungszahl="3" />
+	<point lat="53.85491" lng="10.72731" ordnungszahl="4" />
+	<point lat="53.85497" lng="10.72561" ordnungszahl="5" />
+</polygone>
+<polygone name="">
+	<point lat="" lng=""/>
+</polygone>
+</polygones>
+
+<polylines>
+<polyline name="bermuda dreieck">
+  <point lat="25.774252" lng="-80.190262" ordnungszahl="1"/>
+  <point lat="18.466465" lng="-66.118292" ordnungszahl="2"/>
+  <point lat="32.321384" lng="-64.75737" ordnungszahl="3"/>
+</polyline>
+<polyline name="schilf1">
+	<point lat="68.86488" lng="10.72315" ordnungszahl="1" />
+	<point lat="68.86556" lng="10.72544" ordnungszahl="2" />
+	<point lat="68.86532" lng="10.72739" ordnungszahl="3" />
+	<point lat="68.86491" lng="10.72731" ordnungszahl="4" />
+	<point lat="68.86497" lng="10.72561" ordnungszahl="5" />
+</polyline>
+<polyline name="">
+	<point lat="" lng=""/>
+</polyline>
+</polylines>
+</doc>

@@ -1,0 +1,498 @@
+/*DIES IST EINE ALTE VERSION!!!*/
+/*In dieser Datei wird die Formatierung der Navigationsleiste vorgenommen*/
+
+#nav >ul{
+    margin:0px;
+    float:left;
+    z-index:1001;
+    
+}
+
+
+#na {
+    /*margin-left:auto;
+    margin-right:auto;*/
+    width:100%;
+    
+    
+}
+
+#nav{
+    float:left;
+    width:100%;
+    margin:0px;
+
+  background: #e2e2e2; /* Old browsers */
+    background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+   white-space: nowrap;
+}
+
+#navigation{
+    
+   padding: 0px;
+}
+   
+     
+	#navigation li {
+	    display:inline;
+	    font-size:15px;
+	    font-weight:bold;
+	    float:left;
+        position:relative;
+     
+        
+	}
+	 
+	#navigation >li >a {
+        margin:0px;
+	    padding:10px 15px;
+	    color:black;
+	    display:inline-block;
+	    background: #e2e2e2; /* Old browsers */
+    background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+    
+    
+	}
+	 
+	#navigation >li > ul > li a:hover {
+	    background:white;
+        float:left;
+	    color:black;
+        border-radius: 15px 15px 15px 15px;
+	}
+
+	/*#navigation li :hover  {
+        color:#CCCCCC;   
+	}*/
+    #navigation li > ul >li:hover {
+        top:1px;   
+    }
+    
+    #navigation li:hover > ul
+	{
+	    /*these 2 styles are very important,
+	    being the ones which make the drop-down to appear on hover */
+	    z-index:100;
+	    display:block;
+        top:38px;
+        background: #999999;
+        -webkit-transition: background 0.5s ease;
+            -moz-transition: background 0.5s ease;
+            -ms-transition: background 0.5s ease;
+            -o-transition: background 0.5s ease;
+            transition: background,box-shadow 0.5s ease;
+        
+        -moz-box-shadow: 0px 0px 14px #000000;
+-webkit-box-shadow: 0px 0px 14px #000000;
+box-shadow: 0px 0px 14px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#999999');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#999999')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #ffffff, #999999);
+background-image: -ms-linear-gradient(top, #ffffff, #999999);
+background-image: -o-linear-gradient(top, #ffffff, #999999);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#999999));
+background-image: -webkit-linear-gradient(top, #ffffff, #999999);
+background-image: linear-gradient(top, #ffffff, #999999);
+/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+
+        
+	}
+    
+	 
+	#navigation ul, #navigation ul >li> ul {
+	    list-style: none;
+	    margin: 0;
+	    padding: 0;   
+	    /*the next 2 styles are very important,
+	    being the ones which make the drop-down to stay hidden */
+	    display:none;
+	    position: absolute;
+	    width:220px;
+	    background: #e2e2e2; /* Old browsers */
+    background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+	    border-radius: 0px 10px 10px 10px;
+	    /* css3 transitions for smooth hover effect */
+	    -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
+	    -moz-transition:opacity 0.2s linear, visibility 0.2s linear;
+	    -o-transition:opacity 0.2s linear, visibility 0.2s linear;
+	    transition:opacity 0.2s linear, visibility 0.2s linear; 
+        
+	}
+	 
+	
+	 
+	#navigation ul >li >ul {
+	    top: 0!important;
+        position:absolute;
+	    left: 220px; /* strong related to width:250px; from above */
+	}
+	 
+
+	 
+	#navigation ul > li > a {
+	    background:none;
+        float:left;
+	    padding:7px 15px;
+	    color:black;
+	    display:inline-block;
+	    float:left;
+	    clear:both;
+	    width:190px;
+        
+	}
+    
+     #navigation li > ul  {
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+    
+    #navigation >li >a:hover {
+   background: #e2e2e2; /* Old browsers */
+    background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+    
+     border-radius: 5px;
+     
+    }
+    
+    #navigation >li >a:hover <li{
+        padding: 5px 0px;
+    }
+    
+   /*Hier werden die Farben festgelegt für die einzelenen Elemente der Navigationsleiste, wenn die Maus drüber hovert*/
+    
+    
+    #navigation >li:nth-child(1) >a:hover {
+        background: #FF8C8C;
+            
+        -webkit-transition: background 0.5s ease;
+        -moz-transition: background 0.5s ease;
+        -ms-transition: background 0.5s ease;
+        -o-transition: background 0.5s ease;
+        transition: background,box-shadow 0.5s ease;
+            
+
+        -moz-box-shadow: 0px 0px 14px #000000;
+        -webkit-box-shadow: 0px 0px 14px #000000;
+        box-shadow: 0px 0px 14px #000000;
+        /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#ff8c8c');
+        /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+        /*Element must have a height (not auto)*/
+        /*All filters must be placed together*/
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#ff8c8c')";
+        /*Element must have a height (not auto)*/
+        /*All filters must be placed together*/
+        background-image: -moz-linear-gradient(top, #ffffff, #ff8c8c);
+        background-image: -ms-linear-gradient(top, #ffffff, #ff8c8c);
+        background-image: -o-linear-gradient(top, #ffffff, #ff8c8c);
+        background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#ff8c8c));
+        background-image: -webkit-linear-gradient(top, #ffffff, #ff8c8c);
+        background-image: linear-gradient(top, #ffffff, #ff8c8c);
+        /*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+
+
+    }
+    
+   
+    #navigation >li:nth-child(2) >a:hover {
+        background: #D68453; 
+
+ -webkit-transition: background 0.5s ease;
+            -moz-transition: background 0.5s ease;
+            -ms-transition: background 0.5s ease;
+            -o-transition: background 0.5s ease;
+            transition: background,box-shadow 0.5s ease;
+            
+            -moz-box-shadow: 0px 0px 14px #000000;
+-webkit-box-shadow: 0px 0px 14px #000000;
+box-shadow: 0px 0px 14px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#d68453');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#d68453')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #ffffff, #d68453);
+background-image: -ms-linear-gradient(top, #ffffff, #d68453);
+background-image: -o-linear-gradient(top, #ffffff, #d68453);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#d68453));
+background-image: -webkit-linear-gradient(top, #ffffff, #d68453);
+background-image: linear-gradient(top, #ffffff, #d68453);
+/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+            
+    }
+   
+    #navigation >li:nth-child(3) >a:hover {
+        background: #D4D653;
+            
+  -webkit-transition: background 0.5s ease;
+            -moz-transition: background 0.5s ease;
+            -ms-transition: background 0.5s ease;
+            -o-transition: background 0.5s ease;
+            transition: background,box-shadow 0.5s ease;
+            
+            -moz-box-shadow: 0px 0px 14px #000000;
+-webkit-box-shadow: 0px 0px 14px #000000;
+box-shadow: 0px 0px 14px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#d4d653');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#d4d653')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #ffffff, #d4d653);
+background-image: -ms-linear-gradient(top, #ffffff, #d4d653);
+background-image: -o-linear-gradient(top, #ffffff, #d4d653);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#d4d653));
+background-image: -webkit-linear-gradient(top, #ffffff, #d4d653);
+background-image: linear-gradient(top, #ffffff, #d4d653);
+/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+            
+
+
+    }
+    #navigation >li:nth-child(4) >a:hover {
+        background: #84D653; 
+            -webkit-transition: background 0.5s ease;
+            -moz-transition: background 0.5s ease;
+            -ms-transition: background 0.5s ease;
+            -o-transition: background 0.5s ease;
+            transition: background, box-shadow 0.5s ease;
+       
+       -moz-box-shadow: 0px 0px 14px #000000;
+-webkit-box-shadow: 0px 0px 14px #000000;
+box-shadow: 0px 0px 14px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#84d653');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#84d653')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #ffffff, #84d653);
+background-image: -ms-linear-gradient(top, #ffffff, #84d653);
+background-image: -o-linear-gradient(top, #ffffff, #84d653);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#84d653));
+background-image: -webkit-linear-gradient(top, #ffffff, #84d653);
+background-image: linear-gradient(top, #ffffff, #84d653);
+/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+
+    }
+  
+    #navigation >li:nth-child(5) >a:hover {
+        background: #56D653; 
+     -webkit-transition: background 0.5s ease;
+            -moz-transition: background 0.5s ease;
+            -ms-transition: background 0.5s ease;
+            -o-transition: background 0.5s ease;
+            transition: background,box-shadow 0.5s ease;
+            
+            -moz-box-shadow: 0px 0px 14px #000000;
+-webkit-box-shadow: 0px 0px 14px #000000;
+box-shadow: 0px 0px 14px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#56d653');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#56d653')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #ffffff, #56d653);
+background-image: -ms-linear-gradient(top, #ffffff, #56d653);
+background-image: -o-linear-gradient(top, #ffffff, #56d653);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#56d653));
+background-image: -webkit-linear-gradient(top, #ffffff, #56d653);
+background-image: linear-gradient(top, #ffffff, #56d653);
+/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+    }
+    
+    #navigation >li:nth-child(6) >a:hover {
+        background: #50D67F; 
+       -webkit-transition: background 0.5s ease;
+            -moz-transition: background 0.5s ease;
+            -ms-transition: background 0.5s ease;
+            -o-transition: background 0.5s ease;
+            transition: background,box-shadow 0.5s ease;
+            
+            -moz-box-shadow: 0px 0px 14px #000000;
+-webkit-box-shadow: 0px 0px 14px #000000;
+box-shadow: 0px 0px 14px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#50d67f');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#50d67f')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #ffffff, #50d67f);
+background-image: -ms-linear-gradient(top, #ffffff, #50d67f);
+background-image: -o-linear-gradient(top, #ffffff, #50d67f);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#50d67f));
+background-image: -webkit-linear-gradient(top, #ffffff, #50d67f);
+background-image: linear-gradient(top, #ffffff, #50d67f);
+/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+
+    }
+    
+    #navigation >li:nth-child(7) >a:hover {
+    background:#53d6d4 ;
+ -webkit-transition: background 0.5s ease;
+            -moz-transition: background 0.5s ease;
+            -ms-transition: background 0.5s ease;
+            -o-transition: background 0.5s ease;
+            transition: background,box-shadow 0.5s ease;
+            
+            -moz-box-shadow: 0px 0px 14px #000000;
+-webkit-box-shadow: 0px 0px 14px #000000;
+box-shadow: 0px 0px 14px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#53d6d4');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#53d6d4')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #ffffff, #53d6d4);
+background-image: -ms-linear-gradient(top, #ffffff, #53d6d4);
+background-image: -o-linear-gradient(top, #ffffff, #53d6d4);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#53d6d4));
+background-image: -webkit-linear-gradient(top, #ffffff, #53d6d4);
+background-image: linear-gradient(top, #ffffff, #53d6d4);
+/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+
+    }
+    
+     #navigation >li:nth-child(8) >a:hover {
+        background:#50ABD6;
+            -webkit-transition: background 0.5s ease;
+            -moz-transition: background 0.5s ease;
+            -ms-transition: background 0.5s ease;
+            -o-transition: background 0.5s ease;
+            transition: background,box-shadow 0.5s ease;
+        
+        -moz-box-shadow: 0px 0px 14px #000000;
+-webkit-box-shadow: 0px 0px 14px #000000;
+box-shadow: 0px 0px 14px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#50abd6');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#50abd6')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #ffffff, #50abd6);
+background-image: -ms-linear-gradient(top, #ffffff, #50abd6);
+background-image: -o-linear-gradient(top, #ffffff, #50abd6);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#50abd6));
+background-image: -webkit-linear-gradient(top, #ffffff, #50abd6);
+background-image: linear-gradient(top, #ffffff, #50abd6);
+/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+    }
+    
+    #navigation >li:nth-child(9) >a:hover {
+        background:#0404B4;
+        
+        -webkit-transition: background 0.5s ease;
+            -moz-transition: background 0.5s ease;
+            -ms-transition: background 0.5s ease;
+            -o-transition: background 0.5s ease;
+            transition: background,box-shadow 0.5s ease;
+            
+            -moz-box-shadow: 0px 0px 14px #000000;
+-webkit-box-shadow: 0px 0px 14px #000000;
+box-shadow: 0px 0px 14px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#0404b4');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#0404b4')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #ffffff, #0404b4);
+background-image: -ms-linear-gradient(top, #ffffff, #0404b4);
+background-image: -o-linear-gradient(top, #ffffff, #0404b4);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#0404b4));
+background-image: -webkit-linear-gradient(top, #ffffff, #0404b4);
+background-image: linear-gradient(top, #ffffff, #0404b4);
+/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+    }
+    
+    #navigation >li:nth-child(10)>a:hover {
+        background:#9A2EFE;
+        
+        -webkit-transition: background 0.5s ease;
+            -moz-transition: background 0.5s ease;
+            -ms-transition: background 0.5s ease;
+            -o-transition: background 0.5s ease;
+            transition: background,box-shadow 0.5s ease;
+            
+            -moz-box-shadow: 0px 0px 14px #000000;
+-webkit-box-shadow: 0px 0px 14px #000000;
+box-shadow: 0px 0px 14px #000000;
+/*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#9a2efe');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#9a2efe')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(top, #ffffff, #9a2efe);
+background-image: -ms-linear-gradient(top, #ffffff, #9a2efe);
+background-image: -o-linear-gradient(top, #ffffff, #9a2efe);
+background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#9a2efe));
+background-image: -webkit-linear-gradient(top, #ffffff, #9a2efe);
+background-image: linear-gradient(top, #ffffff, #9a2efe);
+/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+    }

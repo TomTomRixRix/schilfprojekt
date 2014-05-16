@@ -1,0 +1,1463 @@
+/*****************************************INHALTSVERZEICHNIS**************************************************************************************************************************************************************/
+
+/*                      1. allgemein
+                        2. Animation                                                            
+                        3. Index                                                            
+                        4. Home                                                            
+                        5. Tabellen                                                            
+                        6. Mediathek                                                            
+                        7. Adminbereich                                                         
+                        8. Forschungsaspekte                                                                     
+                        9. chemische Werte                                                                     
+                        10.Bildergalerie                                                                     
+                        11.Bildcontainer != Bildergalerie (Bildcontainer sind um jedes Bild, was auf den Inhaltsseiten ist!)
+                        12.Makrofauna
+                        13. Wasseranalyse
+                        14.anderes                                                                                        */
+
+
+
+/****************************************************************************************************************************************************************************************************************************************************/
+/*                  1. allgemein gültig  START                                                   */
+
+html{
+                        background-image:url(images/noise.png);
+	                    width:100%;
+	                    height:auto;
+	                    font-family:Tahoma, Geneva, sans-serif,Arial,Time New Roman;
+                        line-height:1.6;
+        }
+
+body{
+
+                        background: -moz-radial-gradient(center, circle farthest-corner, white 0%, #BDBDBD 75%, #848484 90%);
+                        background: -webkit-radial-gradient(center, circle farthest-corner, white 0%, #BDBDBD 75%, #848484 90%);
+                        background: -ms-radial-gradient(center, circle farthest-corner, white 0%, #BDBDBD 75%, #848484 90%);
+                        background: -o-radial-gradient(center, circle farthest-corner, white 0%, #BDBDBD 75%, #848484 90%);
+	                    margin:0px;
+	                    padding:0px;
+                        width:100%;
+                        position:relative;
+                        text-align:left;
+        
+        }
+
+
+
+a{
+    
+	                    text-decoration:none;
+	                    color:blue;
+        } 
+
+#center	{
+	                    float:right;
+	                    width:100%;
+                    	/*width: 75%;*/
+                        min-height:610px;
+                        height:auto;
+        	            margin-top:1%;
+                        margin-bottom:20px;
+	       	            background-repeat:no-repeat;
+	    	            background-size:cover;
+	                	color: black;
+                        background:white;
+			            /*border-radius: 25px 0px 0px 25px; */
+                        overflow-Y:visible;
+                        padding:0px 75px;
+                        box-sizing:border-box;
+                        -moz-box-sizing:padding-box;
+                        -webkit-box-sizing:border-box;
+                        -ms-box-sizing:border-box;
+			
+			
+		}
+		
+.inhaltsverzeichnis{
+    
+                        display:inline-block;
+                        padding: 0px 20px;
+                        line-height:0.6;
+                        margin-bottom:20px;
+        }
+
+.quellenangaben{
+                       margin-top:100px;
+}    
+
+.hoch{
+                        vertical-align:top; 
+                        font-size:0.8em; 
+                        line-height:100%;
+}
+
+/*für die METHODEN, ERGEBNISSE, ASUWERTUNGEN*/
+#register{
+    margin-bottom:5px;
+}
+
+
+.registerKarte{
+    padding:10px;
+    min-width:130px;
+    height:20px;
+    float:left;
+    margin:0px 5px;
+    text-align:center;
+    border-radius:5px;
+    background:lightgrey;
+}
+
+.registerKarte:hover{
+    -webkit-box-shadow: inset 0px -9px 25px -10px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    inset 0px -9px 25px -10px rgba(50, 50, 50, 1);
+    box-shadow:         inset 0px -9px 25px -10px rgba(50, 50, 50, 1);
+}
+
+.registerKarteSelected{
+    -webkit-box-shadow: inset 0px -9px 25px -10px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    inset 0px -9px 25px -10px rgba(50, 50, 50, 1);
+    box-shadow:         inset 0px -9px 25px -10px rgba(50, 50, 50, 1);
+}
+
+#surfaceContent, #sedimentContent{
+    /*Damit die Scrollbar richtig angezeigt wird*/    
+    width:900px;
+}
+
+.registerContent{
+    display:none;
+}
+
+.registerContentSelected{
+    
+}
+
+#sideBarButton{
+     position:fixed;
+    color:black;
+    background:lightgrey;
+    -webkit-box-shadow:0px 0px 2px #bababa, inset -7px -10px 14px #9c9a9a; 
+    -moz-box-shadow: 0px 0px 2px #bababa,  inset -7px -10px 14px #9c9a9a;  
+    box-shadow:0px 0px 2px #bababa, inset -7px -10px 14px #9c9a9a;      
+    top: 45%;
+    left: 0px;
+    padding: 0px 10px;
+    border-radius:0px 10px 10px 0px;
+}
+
+#sideBarButton:hover{
+    cursor:e-resize;
+}
+/*                                       ENDE                                                   */
+
+
+
+/****************************************************************************************************************************************************************************************************************************************************/
+
+
+/*                      2. Animation  START                                                   */
+
+@keyframes einfliegen{
+    
+                        0%  {margin-left:500px; opacity:0;}
+                        100%{margin-left:3%; opacity:0.50;}
+        }
+
+@keyframes einfliegenVonOben{
+    /*Für HomeSeite*/
+                        0%  {top:-500px; opacity:0;}
+                        90%  {top:20px; opacity:0.7;}
+                        100%{top:0px; opacity:0.60;}
+        }
+
+@keyframes einfliegenVonLinks{
+    /*Für SideBar*/
+                        0%  {left:-500px; opacity:0;}
+                        100%{left:   0px; opacity:1;}
+        }
+                
+        
+@keyframes einfliegenVonRechts{
+    /*Für Legende*/
+                        0%  {right:-500px; opacity:0;}
+                        90% {right:  20px; opacity:0.7;}
+                        100%{right:   0px; opacity:1;}
+        }        
+
+
+
+
+
+@keyframes colorAnimation{
+                        0%{background-color:blue;}
+                        25%{background-color:green;}
+                        50%{background-color:lightgreen;}
+                        75%{background-color:yellow;}
+                        100%{background-color: #B30303;}
+        }
+/*Animation ENDE*/
+
+
+/****************************************************************************************************************************************************************************************************************************************************/
+
+
+/*                          3. Index START                                                  */
+#HeadBox{
+    
+                        font-size:25px;
+    
+        }
+        
+#HeadSubBox{
+    
+                        font-size:18px;
+    
+        }
+        
+#Header{
+    	                height:150px;
+    	                width:100%;
+    	                margin:auto;
+    	                vertical-align: middle;
+    	                background-image:url(images/schilf_panorama.JPG);
+                        background-repeat: no-repeat; 
+                        background-size:100% 100%;
+        
+            }
+
+#Headline{
+                        text-shadow:white 3px 2px 4px,white -3px -2px 4px;
+                        text-align:left;
+                        line-height:0.3;
+                        transition-duration:3s;
+                        transition-property:margin-left;
+        
+        
+            }
+
+#HeadlineBackground{
+                        /*animation: einfliegenVonOben 3s;*/
+                        background:white;
+                        margin-left: 2%;
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        height: 80px;
+                        width: 490px;
+                        z-index: 1;
+                        float: left;
+                        padding: 20px;
+                        border-radius: 0px 0px 20px 20px;
+                        opacity: 0.4;
+                        
+            }
+
+
+
+#HeadlineText{
+                        margin-left:3%;
+                        float:left;
+                        z-index:10;
+                        position:absolute;
+            }
+
+#Line{
+                    
+	                    height:5px;
+    	                width:100%;
+    	                background-color: #B30303;
+                        margin:0px;
+                        padding:0px;
+            }
+
+
+	
+#tooltips{
+                        background:white;
+                        width:200px;
+                        position:fixed;
+                        left:0px;
+                        margin-top:100px;
+                        margin-left:22%;
+                        border-radius:10px;
+                        border:1px solid black;
+                        padding:10px;
+                        display:none;
+                
+        }	
+        
+#tooltipBruecke{
+                        color:grey;
+                        display:none;
+        }
+        
+#tooltipEichholz{
+                        color:green;
+                        display:none;
+        }
+        
+#tooltipKleinerSee{
+                        color:#EEC900;
+                        display:none;
+        }
+        
+#tooltipAbsalonshorst{
+                        color:red;
+                        display:none;
+        }
+        
+#tooltipGrossSarau{
+                        color:blue;
+                        display:none;
+        }
+        
+#SideBar{
+    	   
+                        position:absolute;
+                        z-index:2;
+                        /*min-height:610px;*/
+                        /*Height wird über JQuery in der Index.php-Datei bestimmt. Normalerweise soll height so wie height bei center sein (auto)*/
+                        background:white;
+                        width:22%;
+	                    margin-top: 53px;
+                        border-radius: 0px 25px 25px 0px; 
+                        padding: 11px 0px;
+                        box-sizing:border-box;
+                        -moz-box-sizing:padding-box;
+                        -webkit-box-sizing:border-box;
+                        -ms-box-sizing:border-box;
+                        display:none;
+        }
+ 
+/*#sideBarInfoBox{     
+                        height: 100%;
+                        width: 100%;
+                        float: right;
+                      
+}
+
+#sideBarInfo{
+                      
+                       padding:5px;
+                       line-height:0.5;
+                       padding-top:50px;
+                       
+                        /**position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        bottom: 470px;
+                        width:300px;
+                        transform: rotate(270deg) ;
+                        -webkit-transform: rotate(270deg) ;
+                        -moz-transform: rotate(270deg) ;
+                        -o-transform: rotate(270deg) ;
+                        -ms-transform: rotate(270deg) ;**/
+
+
+}
+        
+#sideBarInhalt{
+    
+                        display:none;
+                        height:auto;
+                        width:100%;
+                        box-sizing:padding-box;
+                        -moz-box-sizing:padding-box;
+                        -webkit-box-sizing:border-box;
+                        -ms-box-sizing:border-box;
+                        background-size:contain;
+                        background-repeat:no-repeat;
+                        position:relative;
+        
+        
+        }
+        
+#legende{
+    
+                        margin-top: 40px;
+                        line-height:5pt;
+                        text-align:right;
+                        position:absolute;
+                        float:right;
+                        right:20px;
+                        font-size: 10pt;
+        }
+        
+#festerInhaltFuerUmriss{
+    
+                        width:200px;
+                        height:400px;
+                        background-image:url(images/wakenitz_umriss.png);
+    
+        }
+        
+#punktBruecke{
+
+                        top:21%;
+                        left:11%;
+                        background:grey;
+        }
+        
+.punkt{
+    
+                        position: relative;
+                        border-radius:20px;
+                        width: 7%;
+                        height: 3%;
+                        z-index:100;
+        }
+        
+#punktKleinerSee{
+    
+                        top: 29%;
+                        left: 46%;
+                        background:#EEC900;
+        }
+        
+#punktEichholz{
+    
+                        top: 19%;
+                        left: 40%;
+                        background:green;
+        }
+
+#punktAbsalonshorst{
+
+                        top: 41%;
+                        left: 74%;
+                        background:red;
+        }
+
+#punktGrossSarau{
+    
+                        top: 84%;
+                        left: 67%;
+                        background:blue;
+        }
+        
+#termine{
+    
+                        text-align:left;
+                        position:absolute;
+                        padding-left:10px;
+                        display:none;
+        }
+        
+.Sponsor{
+
+			            float:left;
+			            width: 10%;
+			            height: 90px;
+			            background-repeat:no-repeat;
+                        background-size:contain;
+                        margin-right: 20px;
+		}
+		
+#tms{
+	
+	                    background-image: url(images/tms_transparent.png);
+	
+	    }
+#lola{
+    
+	                    background-image: url(images/lola_transparent1.png);
+                        width:16%;
+	    
+	    }
+
+#possehl{
+                
+	                    background-image: url(images/possehl_transparent.png);
+                        width:18%;
+	
+	    }
+	
+#lias{
+    
+	                    background-image: url(images/lias_transparent1.png);
+                        width:14%;
+                        margin-top: 7px;
+                        
+	    }   
+	
+#schuelerakademie{
+	
+	                    background-image: url(images/salue_transparent.png);
+                        width:19%;
+                        
+	    }
+	
+#Footer{
+    
+	                    clear:both;
+	                    background-color: #FFFFFF;
+	                    height:120px;
+	                    width:100%;
+	                    vertical-align:bottom;
+	                    color:black;
+	                    font-size:18px;
+                        border-top: 2px  dashed #696868;
+                        padding-top: 30px;
+                        padding-left: 20px;
+                        box-sizing:border-box;
+                        -moz-box-sizing:padding-box;
+                        -webkit-box-sizing:border-box;
+                        -ms-box-sizing:border-box;
+                        position:relative;
+                        /**margin: 0 auto;**/
+        }
+        
+#imp {
+
+                        color:blue;
+                        position:absolute;
+                        bottom:5px;
+                        right:20px;
+                        text-decoration:underline;
+        }
+/*                               Index ENDE                                                      */  
+
+
+/****************************************************************************************************************************************************************************************************************************************************/
+
+
+/*                              4.Home START                                                    */
+                                    
+#homeTexthead{
+                        text-align:center;
+                        font-size:25pt;
+                        text-decoration:underline;
+
+        }
+        
+#homeText{
+    
+                        font-size:18pt;
+        
+        }
+        
+#textAusrichtung       {
+    
+                        float:left; 
+                        width:80%; 
+                        
+    
+        }
+        
+#clear{
+    
+                        clear:both;
+    
+        }
+        
+#logoAusrichtung{
+    
+                        float:left;
+                        width:20%;
+                        height:400px;
+        }
+#controlPoints{
+    
+                        background-color:blue;
+     
+        } 
+  
+#pointsCentern{
+
+                        width:150px;
+        }
+        
+.point{
+  
+                        border-radius:10px;
+                        width:15px;
+                        height:15px;
+                        float:left;
+                        margin:5px;
+                        border:2px solid black;
+                        z-index:1000;
+        }
+  
+.point span{
+ 
+                        visibility:hidden;
+        }
+  
+#artikelHead{
+
+                        text-decoration:underline;
+                        font-weight:bold;
+                        font-size:15pt;
+        }
+  
+ #artikelBody{
+ 
+                        font-size:12pt;
+        }
+        
+#slideBoxArtikel{
+
+                        border:2px solid black;
+                        background-color:white;
+                        margin-bottom:40px;
+                        border-radius:10px;
+                        padding:10px;
+                        position:relative;
+        }
+  
+#lefthalf{
+
+                        background:transparent;
+                        width:50%; 
+                        height:100%; 
+                        position:absolute; 
+                        top:0; 
+                        z-index:1000; 
+                        left:0;
+        }
+
+#righthalf{
+     
+                        background:transparent;
+                        width:50%; 
+                        height:100%; 
+                        position:absolute; 
+                        top:0; 
+                        right:0;
+        }
+ 
+#slideBoxPfeileMitContent{
+
+                        display:block;
+                        padding-bottom:25px;
+                        z-index:50;
+        }
+  
+#pfeilLinks:before {
+    
+                        /* Rahmen nur an einer Seite einblenden */
+                        border-color:transparent grey transparent transparent ;
+                        border-style:solid;
+                        border-width:50px;
+                        /* Pseudo-Element stylebar machen */
+                        content:" ";
+                        display:block;
+                        height:0px;
+                        width:0px;
+                        /* Pseudo-Element positionieren */
+                        left:0px;
+                        position:absolute;
+        }
+
+#pfeilLinks {
+    
+                        display:none;
+                        position:relative;
+                        float:left;
+                        margin-top:50px;
+                        opacity:0.5;
+        }
+
+#pfeilLinks:hover{
+    
+                        opacity:1;
+        }
+
+#pfeilRechts:before {
+    
+                        /* Rahmen nur an einer Seite einblenden */
+                        border-color:transparent transparent transparent grey;
+                        border-style:solid;
+                        border-width:50px;
+                        /* Pseudo-Element stylebar machen */
+                        content:" ";
+                        display:block;
+                        height:0px;
+                        width:0px;
+                        /* Pseudo-Element positionieren */
+                        right:0px;
+                        position:absolute;
+        }
+
+#pfeilRechts {
+    
+                        display:none;
+                        position:relative;
+                        float:right;
+                        margin-top:50px;
+                        opacity:0.5;
+        }
+
+#pfeilRechts:hover{
+    
+                        opacity:1;
+        }
+
+#left{
+    
+                        float:left;
+                        margin-top:50px;
+        }
+  
+#right{
+    
+                        float:right;
+                        margin-top:50px;
+        }
+  
+#slideBoxContent{
+    
+                        height:200px;
+                        padding: 0px 0px;
+        }
+  
+#bild{
+
+                        float:left;
+                        
+        }
+  
+.artikel{
+    
+                        min-height:200px;
+        }
+  
+.artikel img{
+    
+                        float:left;
+                        text-align:center;
+                        margin-right:10px;
+        }
+  
+#artikelText{
+    
+                        padding-right:10px;
+                        padding-top:1px;
+                        z-index:200;
+   
+        }
+  
+#punkt1{
+  
+                        background-color:white;
+        }
+
+#punkt1:hover{
+    
+                        background-color:grey!important;
+        }
+
+#punkt2{
+    
+                        background-color:white;
+        }
+
+#punkt2:hover{
+    
+                        background-color:grey!important;
+        }
+  
+#punkt3{
+    
+                        background-color:white;
+        }
+  
+#punkt3:hover{
+    
+                        background-color:grey!important;
+        }
+
+#punkt4{
+    
+                        background-color:white;
+        }
+
+#punkt4:hover{
+    
+                        background-color:grey!important;
+        }
+  
+#punkt5{
+     
+                        background-color:white;
+        }
+  
+#punkt5:hover{
+    
+                        background-color:grey!important;
+        }
+/*                                  Home ENDE                                           */
+
+
+/****************************************************************************************************************************************************************************************************************************************************/
+
+
+/*                                  5.Tabellen START                                    */
+
+.tabellesuchergebnissebio > tr > th{
+    
+                        width:60px;
+                        background:#BDBDBD;
+    
+}
+
+
+
+table.tabellesuchergebnissebio{
+    
+                        width: 750px;
+                        font-family: Calibri;
+                        border-collapse: collapse;
+                        color:black;
+                        table-layout: fixed;
+                        font-size:12pt;
+    
+        }
+
+table.tabellesuchergebnissebio td {
+   
+                        text-align: left;
+                        font-family: Calibri;
+                        border-collapse: collapse;
+                        border: 1px solid black;
+                        padding: 1px 3px;
+        }
+
+table.tabellesuchergebnissebio th {
+   
+                        text-align: left;
+                        font-family: Calibri;
+                        border: 1px solid black;
+                        padding: 1px 3px;
+                        border-collapse: collapse;
+                        width:60px;
+                        height:50px;
+                        white-space: nowrap;
+        } 
+        
+/*Beim Ausgeben der Daten in Tabellen werden die Einheiten in einer eigenen Zeile angezeigt, die dieselbe Farbe wie der Header hat*/
+
+.einheiten{
+
+                        background:#BDBDBD;
+    
+        }
+        
+/* Die Beschriftung "Zu den Einzelergebnissen" ist um 270° gedreht, damit sie besser in die Tabelle passt*/
+
+#gedreht{
+        
+                        -moz-transform: rotate(270deg);
+                        -ms-transform: rotate(270deg);
+                        -o-transform: rotate(270deg);
+                        -webkit-transform: rotate(270deg);
+                        transform: rotate(270deg);
+                        font-size:6pt;
+        } 
+        
+
+
+.tablebody{
+    
+                        height:50%;
+                        overflow-y:scroll;
+                        width:101.1%;
+        }
+
+.tablebody > table > thead > tr > th{
+    
+                        height:0px;  
+                        border-color:transparent;
+ 
+        }
+
+.tablebody > table >tbody > tr:hover{
+    background:#BDBDBD!important;
+    color:#FFFFFF!important;
+    
+}
+
+.tablebody > table >tbody > tr> td:hover{
+    background:#FFFFFF!important;
+    color:#000000!important;
+}
+
+#rahmenInhaltFuerScrolltabelle{
+    
+                        width:1000px;
+        }
+        
+#tabbio1{
+            
+                        width:115px;
+        }
+        
+#tabbio2{
+    
+                        width:80px;
+        }
+        
+#tabbio3{
+    
+                        width:20px;
+        }
+        
+#okfarbe1{
+    
+                        background-color:#9AFF9A;
+        }
+        
+#frfarbe1{
+        
+                        background-color:#9AFF9A;
+        }
+        
+#okfarbe2{
+    
+                        background-color:#F4FA58;
+        }
+        
+#frfarbe2{
+    
+                        background-color:#F3F697;
+        }
+        
+#okfarbe3{
+    
+                        background-color:#FF8C69;
+        }
+        
+#frfarbe3{
+    
+                        background-color:#FABCA9;  
+        }
+
+div.tabelle{
+                        border-collapse: collapse;
+                        overflow:auto;
+        }
+         
+
+table.tabellesuchergebnisse{
+    
+                        width: 750px;
+                        font-family: Calibri;
+                        border-collapse: collapse;
+                        color:black;
+                        table-layout: fixed;
+                        font-size:12pt;
+    
+        }
+
+table.tabellesuchergebnisse td {
+    
+                        text-align: left;
+                        font-family: Calibri;
+                        border-collapse: collapse;
+                        border: 1px solid black;
+                        padding: 1px 3px;
+        }
+
+table.tabellesuchergebnisse th {
+    
+                        text-align: left;
+                        font-family: Calibri;
+                        border: 1px solid black;
+                        padding: 1px 3px;
+                        border-collapse: collapse;
+                        width:40px;
+                        height:50px;
+                        white-space: nowrap;
+        }
+        
+.tablebody1{
+    
+                        height:50%;
+                        overflow-y:scroll;
+                        width:97.4%;
+        }
+        
+.tablebody1 > table > thead > tr > th{
+    
+                        height:0px;  
+                        border-color:transparent;
+ 
+        }
+        
+/*Beim Ausgeben der Daten in Tabellen werden die Einheiten in einer eigenen Zeile angezeigt, die dieselbe Farbe wie der Header hat*/
+.einheiten{
+    
+                        background:#BDBDBD;
+    
+        }
+
+/*Zusammenhängende Kopfspalten*/
+.einheiten >tr >td{
+    
+                        border-top:0px ;
+        }        
+        
+/*                          Tabellen ENDE                                       */
+
+/****************************************************************************************************************************************************************************************************************************************************/
+
+
+ /*                         6.Mediathek START                                   */       
+        
+
+
+/*                      Mediathek ENDE                                      */  
+
+
+/****************************************************************************************************************************************************************************************************************************************************/
+
+        
+/*                      7.Adminbereich START                                */
+
+#admin {
+   
+                        text-align:left;
+    
+        }
+        
+#speichern{
+    
+                        float:right;
+                        font-size:30px;
+                        border-radius:10px;
+                        color:#216310;
+    
+        }
+
+#wasser{
+                        border-right:2px solid black;
+                        padding-right:10px;
+            
+        }
+
+#sediment{
+                        padding-left:10px;
+        }
+        
+.column{
+    
+                        font-weight:bold;
+                        margin-left: 20px;
+                        text-decoration:underline;
+                        font-size:15pt;
+        }
+
+textarea{
+    
+                        font-family:Tahoma,Geneva,sans-serif,Arial,Time New Roman;
+        }
+
+#chemdatalisttable > thead{
+            
+                        font-weight:bold;
+        }
+
+#caption{
+
+                        text-align:center;
+                        font-size:28pt;
+                        font-family:Arial;
+                        font-weight:bold;
+                        text-decoration:underline;
+                        margin-bottom:10pt;
+                        margin-top:10pt;
+                        white-space: nowrap;
+        }
+
+
+#infobox{
+    
+                        z-index:-1;
+                        background:white;
+                        border-radius:10px;
+                        padding:10px;
+                        display: inline-block;
+                        border-style:solid;
+    
+        }
+        
+#infobox:hover{
+    
+                        background:none;
+        }
+
+#infoInhalt{
+    
+                        visibility:hidden;
+                        position:absolute;
+                        margin-top:30px;
+                        margin-left:-50px;
+                        background:white;
+                        border-radius:10px;
+                        padding:10px;
+                        z-index:500;
+        }
+        
+#infobox:hover >#infoInhalt{
+    
+                        z-index:500;
+                        visibility:visible;
+                        transition-duration:2s;
+                        transition-property:background, width;
+        }
+        
+#caption{
+    
+                        text-align:center;
+                        font-size:28pt;
+                        font-family:Arial;
+                        font-weight:bold;
+                        text-decoration:underline;
+                        margin-bottom:10pt;
+                        margin-top:10pt;
+                        white-space: nowrap;
+        }
+        
+        
+/*                              Adminbereich ENDE                                    */
+
+
+/****************************************************************************************************************************************************************************************************************************************************/
+
+
+/*                              8.FORSCHUNGSASPEKTE START                           */
+.aspekt{
+                        padding:10px 20px;
+                        margin-bottom:10px;
+                        overflow-y:hidden;
+                        /*border:1px solid black;*/
+        }
+/*                              FORSCHUNGSASPEKTE ENDE                              */
+
+
+/****************************************************************************************************************************************************************************************************************************************************/
+
+
+/*                              9.chemische Werte START                             */
+
+.tabnavigation{
+    
+                        width:900px;
+                        background:white;
+        }
+
+.tabnavigation #wa, #sa{
+    
+                        font-size:15pt;
+        }
+
+.tabnavigation ul{
+    
+                        list-style-type:none;
+                        margin-top:10px;
+                        padding:0px;
+                        text-align:center;
+        } 
+
+.tabnavigation li{
+    
+                        display:inline;
+                        background:#BDBDBD;
+                        border-radius: 0px 0px 15px 15px;
+                        border: 1px solid black;
+                        margin: 0px;
+                        padding:10px 5px;
+        }
+        
+.tabnavigation li:hover{
+    
+                        background-color:black;
+        }
+        
+.tabnavigation li:hover a{
+    
+                        color:white;   
+        }
+        
+.tabnavigation li a{
+   
+                        color:white;
+   
+        }
+
+.tabinhalt{
+    
+                        width:900px; 
+                        background:white;
+                        padding:0px 0px;
+                        padding-bottom:20px;
+        }
+
+/*                           chemische Werte ENDE                                          */
+
+
+/****************************************************************************************************************************************************************************************************************************************************/
+
+
+/*                          10.Bildergalerie START                                         */
+
+#bildgr{
+    
+                        text-align:center;
+        }
+                
+.ordner {
+
+                        display:block;
+                        min-width:300px;
+                        min-height:300px;
+                        float:left;
+                        margin:20px;
+                        text-align:center;
+                        text-decoration:underline;
+                        font-weight:bold;
+
+        }
+        
+/*div um Bild herum*/
+#bildpos{
+    
+                        width:300px;
+                        height:300px;
+                        margin:0px 10px;
+                        padding-bottom:50px;
+                        float:left;
+                        text-align:center;
+    
+        }
+        
+/*Lässt Bilder im Hoch- und Querformat im übergeordneten div gut aussehen*/
+#bildpos img{
+    
+                        width:auto;
+                        height:auto;
+                        max-width:100%;
+                        max-height:100%;
+                        margin: 0px 5px;
+        }
+    
+#bildpos p{
+    
+                        color:black;
+    
+        } 
+/*Bildergalerie ENDE*/
+
+
+/****************************************************************************************************************************************************************************************************************************************************/
+
+
+/*                          11.Bildcontainer START                                          */
+
+ /*Für die Bilderspalte auf der linken Seite jeder Contentpage*/
+.bildContainer{
+    
+                        width:25%;
+                        height:auto;
+                        float:right;
+                        padding:10px;
+        }
+
+/*Die Bilder sollen so breit wie möglich sein. Die Höhe passt sich dann an*/
+.bildContainer img{
+    
+                        width:100%;
+                        height:auto;
+                        
+        }
+
+/* Mittige Bildunterschriften für die Bilder an der Seite*/
+.bildunterschrift{
+    
+                        text-align:center;
+                        color:black;
+                        padding-bottom:40px;
+        }
+
+
+
+#paddingUnten{
+    
+                        padding-top:10px;
+                        padding-bottom:10px;
+        }
+
+/*                     Bildcontainer ENDE                                                       */
+
+
+/****************************************************************************************************************************************************************************************************************************************************/
+
+/*                      12.Makrofauna START                                                           */
+
+#makrotabelle{
+                        width:100%;
+                       border-collapse: collapse;
+    }
+    
+#makrotabelle thead > tr > th  {
+                        border: 1px solid black;
+                        border-collapse: collapse;
+                        padding: 1px 5px;
+                        width:20%;
+    }
+    
+#makrotabelle tbody > tr > td  {
+                        border: 1px solid black;
+                        border-collapse: collapse;
+                        padding: 1px 5px;
+                        width:20%;
+    }    
+
+/*                     Bildcontainer ENDE                                                       */
+
+/****************************************************************************************************************************************************************************************************************************************************/
+
+/*                      14.wasseranalyse START                                                           */
+
+
+.laborText{
+                        
+                        display:none;
+}
+
+#labor > table > thead > tr > th{
+            text-align:left;
+            
+        }
+        
+#labor > table > tbody > tr{
+            vertical-align:top;
+        }
+        
+#labor > table  td{
+            padding-right:50px;
+        }
+        
+#labor > table  th{
+            padding-right:50px;
+        }
+        
+#labor > table > tbody > tr > td > ul > li > span {
+            color:blue;
+        }
+
+/*                     wasseranalyse ENDE                                                       */
+
+/****************************************************************************************************************************************************************************************************************************************************/
+
+/*                      14.anderes START                                                           */
+
+#Absalonshorst{
+    
+                        background-color:#ff0000;
+        }
+
+.Button:hover{
+	
+	                    background-image: url(images/Button.png);
+        }
+
+.newsbox{
+    
+                        background-color: white;
+                        padding: 1px 15px 5px 15px;
+                        margin-bottom:25px;
+        }
+        
+#uploadtime{
+    
+                        float:right;
+                        font-size:8pt;
+        }
+
+#title{
+    
+                        text-decoration:underline;
+                        text-align:center;
+    
+        }
+
+/*.boxbody{
+    
+                        white-space: wrap;  
+                        text-align:left;
+    
+        }*/
+
+#umriss{
+    
+                        position:relative;
+                        width:100%;
+                        height:600px;
+    
+        }
+
+#aspekte >table td{
+    
+    	                padding:5px;
+	    }
+	    
+#autohead{
+    
+                        text-decoration:underline; 
+                        text-align:center;
+        }
+        
+#pflanze{
+    
+                        float:left;
+                        padding-right:10px;
+                        padding-left:20px;
+        }
+        
+#pueber{
+    
+                        text-decoration:underline;
+                        font-weight:bold;
+        }
+#samen{
+    
+                        float:left;
+                        padding-right:10px;
+                        padding-left:20px;
+        }
+
+#bildgruppelisttable > thead{
+    
+                        font-weight:bold;
+        }
+        
+#deletred{
+        
+                        color:red;
+        }
+
+#deletbio{
+    
+                        color:red;
+        }
+#listeBlau{
+                        color:blue;
+        }
+
+/*
+*Geovermessung: Legende für Karte
+*/
+#geolegende{
+    position: absolute;
+    right: 0px;
+    z-index: 500;
+    background: white;
+    margin-top: 100px;
+    margin-right:80px;
+    padding:5px;
+    animation:einfliegenVonRechts 3s;
+    width:140px;
+}        
+        /*                              anderes ENDE                                    */
