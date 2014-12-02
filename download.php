@@ -38,6 +38,10 @@
     
     <!--Pr&auml;sentationen-->
     <h3>Pr&auml;sentationen</h3>
+    <p>Vortragsfolien von B. Kunze anlässlich der <em>Stadt der jungen Forscher 2014</em> 
+        <a href="download/wuerzburg-schilf-07-2014-w-klein.pdf">.pdf Download</a> (komprimierte Version, 2,4 MB)
+        <a href="download/wuerzburg-schilf-07-2014-w.pdf">.pdf Download</a> (Originalversion, 64 MB)
+    </p>
     <p>Schilfrhizom 
         <a href="download/Genetische%20Analyse/Pr%c3%a4sentationen%20Aktionstag%2011.5.12/Das%20Schilfrhizom%20Pr%c3%a4sentation%20neu.pptx">.pptx Download</a>
     </p>
