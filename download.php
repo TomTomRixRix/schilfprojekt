@@ -38,8 +38,8 @@
     
     <!--Pr&auml;sentationen-->
     <h3>Pr&auml;sentationen</h3>
-    <p>Vortragsfolien von B. Kunze anlässlich der <em>Stadt der jungen Forscher 2014</em> 
-        <a href="download/wuerzburg-schilf-07-2014-w-klein.pdf">.pdf Download</a> (komprimierte Version, 2,4 MB)
+    <p>Vortragsfolien von B. Kunze anl&auml;sslich der <em>Stadt der jungen Forscher 2014</em> <br>
+        <a href="download/wuerzburg-schilf-07-2014-w-klein.pdf">.pdf Download</a> (komprimierte Version, 2,4 MB) <br>
         <a href="download/wuerzburg-schilf-07-2014-w.pdf">.pdf Download</a> (Originalversion, 64 MB)
     </p>
     <p>Schilfrhizom 
