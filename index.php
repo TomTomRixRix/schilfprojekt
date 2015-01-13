@@ -1,4 +1,4 @@
-
+<?php header('Content-Type: text/html; charset=ISO-8859-1');?>
 <html>
 
 <!-- 
@@ -7,31 +7,31 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
 
 <head>
 	<title>Schilfprojekt</title>
-    <!--Die keywords sind dafÃ¼r, dass man die Schilfwebsite in Suchmaschinen findet.-->
+    <!--Die keywords sind dafür, dass man die Schilfwebsite in Suchmaschinen findet.-->
 	<meta name="keywords" content="Schilf, Schilfsterben, Thomas, Mann, Schule, Gymnasium, TMS, LOLA, Possehl, Stiftung, LIaS">
     
     <!--Hier wird der Zeichensatz definiert. 
-	Dieser Zeichensatz stimmt mit dem der angeschlossenen Datenbank Ã¼berein.
-	Jedoch beduetet dies, dass fÃ¼r deutsche Buchtstaben und Sonderzeichen Tricks verwendet werden mÃ¼ssen. Zum Beispiel:
-	Ã¤ wird in html durch &auml; erzeugt, die GroÃŸbuchstaben Ã„ durch &Auml; 
-	Ã¶ &ouml; Ã– &Ouml;
-	Ã¼ &uuml; Ãœ &Uuml;
-	ÃŸ durch &szlig; -->
-    <meta http-equiv="content-type" content="text/html" charset="ISO-8859-1">     <!--charset=ISO-8859-1-->
+	Dieser Zeichensatz stimmt mit dem der angeschlossenen Datenbank überein.
+	Jedoch beduetet dies, dass für deutsche Buchtstaben und Sonderzeichen Tricks verwendet werden müssen. Zum Beispiel:
+	ä wird in html durch &auml; erzeugt, die Großbuchstaben Ä durch &Auml; 
+	ö &ouml; Ö &Ouml;
+	ü &uuml; Ü &Uuml;
+	ß durch &szlig; -->
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">     <!--charset=ISO-8859-1-->
     
-    <!--Das Stylesheet (stylesheet.css) fÃ¼r die Hauptseiten wird hier eingebunden-->
+    <!--Das Stylesheet (stylesheet.css) für die Hauptseiten wird hier eingebunden-->
 	<link href="stylesheet.css" type="text/css" rel="stylesheet"/>
     
-    <!--Das Stylesheet (newnavigationcss.css) fÃ¼r die Navigationsleiste wird hier eingebunden-->
+    <!--Das Stylesheet (newnavigationcss.css) für die Navigationsleiste wird hier eingebunden-->
     <link href="navi.css" type="text/css" rel="stylesheet"/>
     
-    <!--Hier wird der Icon eingebunden, der bei vielen Browsern im Tab oder bei Lesezeichen fÃ¼r die Schilfwebsite angezeigt wird-->
+    <!--Hier wird der Icon eingebunden, der bei vielen Browsern im Tab oder bei Lesezeichen für die Schilfwebsite angezeigt wird-->
     <link rel="shortcut icon" href="./images/SchilfIcon_transparent.ico" type="image/x-icon"/>
     <link rel="icon" href="./images/SchilfIconAnimation.gif" type="image/gif"/>
     <!--Hier die animierte Version, die aber nicht bei allen Browsern geht-->
     
     
-    <!--Die Vollbildfunktion wird durch die lightbox-Bibliothek unterstÃ¼tzt, die hier durch JavaScript und CSS eingebunden wird.-->
+    <!--Die Vollbildfunktion wird durch die lightbox-Bibliothek unterstützt, die hier durch JavaScript und CSS eingebunden wird.-->
 	<script src="lightbox/js/jquery-1.10.2.min.js"></script>
     <script src="lightbox/js/lightbox-2.6.min.js"></script>
     <link href="lightbox/css/lightbox.css" type="text/css" rel="stylesheet"/>   
@@ -42,14 +42,14 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
 
 <body align="center">
     <?php
-    //Die Session wird gestartet. Die Session ist spÃ¤ter wichtig fÃ¼r die Login-Funktion fÃ¼r den Admin-Bereich. Durch sogenannte SESSION-Variablen kÃ¶nnen dann 
+    //Die Session wird gestartet. Die Session ist später wichtig für die Login-Funktion für den Admin-Bereich. Durch sogenannte SESSION-Variablen können dann 
     session_start();
     ?>
 
     
 	<div id="Header">
 		<div id="Headline">
-            <!--Ãœber die ID "HeadlineBackground" wird das Hintergrundbild mit CSS in den Header eingebaut-->
+            <!--Über die ID "HeadlineBackground" wird das Hintergrundbild mit CSS in den Header eingebaut-->
             <div id="HeadlineBackground"></div>
             <div id="HeadlineText">
                 <h2 id="HeadBox">Schilfprojekt der Thomas-Mann-Schule</h2>
@@ -65,7 +65,7 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
 	<div id="Line">
 	</div> 
 		
-    <!--Hier beginnt die Navigationsleiste. Diese ist mithilfe einer ungeordneten Liste(ul) aufgebaut. Die einzelnen ListItems(li) beinhalten einen Link auf die verlinkten Unterseiten. Wenn die Kategorien sich nur ausfahren, aber nicht anklickbar sein sollen, dann wird kein href-Attribut gesetzt. Die ausfahrbaren Unterkategorien sind wiederum mit Listen und ListItems in den Ã¼bergeordneten ListItems realisiert. Die href-Links Ã¤ndern oder ergÃ¤nzen nur das URL-Attribut ?site, was dann spÃ¤ter - immer wenn die index-Seite aufgerufen wird - ausgelesen wird, sodass dann nur diese Unterseite includet wird. href="#" sollen noch tote Links darstellen, die demnÃ¤chst gefÃ¼llt werden-->
+    <!--Hier beginnt die Navigationsleiste. Diese ist mithilfe einer ungeordneten Liste(ul) aufgebaut. Die einzelnen ListItems(li) beinhalten einen Link auf die verlinkten Unterseiten. Wenn die Kategorien sich nur ausfahren, aber nicht anklickbar sein sollen, dann wird kein href-Attribut gesetzt. Die ausfahrbaren Unterkategorien sind wiederum mit Listen und ListItems in den übergeordneten ListItems realisiert. Die href-Links ändern oder ergänzen nur das URL-Attribut ?site, was dann später - immer wenn die index-Seite aufgerufen wird - ausgelesen wird, sodass dann nur diese Unterseite includet wird. href="#" sollen noch tote Links darstellen, die demnächst gefüllt werden-->
     <div id="na" >
         <nav id="nav">
     	    <ul id="navigation" type="none">
@@ -140,14 +140,14 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
 						<li><a href="?site=download">Downloads</a></li>
 					</ul>
                 </li>
-                <!--Admin, spÃ¤ter unten auf der Seite, oder nur Ã¼ber URL erreichbar>
+                <!--Admin, später unten auf der Seite, oder nur über URL erreichbar>
 				<li><a id="listElement9" href="?site=login">Admin</a></li-->
 			</ul>
         </nav>
     </div>
 
-	<!--Die Tooltips sind die Fenster, die neben der SideBar erscheinen, wenn man Ã¼ber die Namen oder Punkte der Standorte hovert.
-		Die Tooltips an sich bestehen nur aus einem Bild und einer StandortÃ¼berschrift.-->
+	<!--Die Tooltips sind die Fenster, die neben der SideBar erscheinen, wenn man über die Namen oder Punkte der Standorte hovert.
+		Die Tooltips an sich bestehen nur aus einem Bild und einer Standortüberschrift.-->
     <div id="tooltips">
         <div  id="tooltipBruecke">
             Wallbrechtbr&uuml;cke
@@ -173,7 +173,7 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
     </div>
         
     <script language="javascript" type="text/javascript">
-		//In diesem JavaScript-Teil wird den Tooltips ihre FunktionsfÃ¤hiigkeit gegeben
+		//In diesem JavaScript-Teil wird den Tooltips ihre Funktionsfähiigkeit gegeben
 		
 		/*
 		*	Wie der Name showTooltip schon sagt, wird mit dieser Funktion das Tooltip eines Standortes angezeigt.
@@ -270,7 +270,7 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
 	   
 	    
 	    $( document ).ready(function() {
-	        //beim klicken SideBar Ã¶ffnen
+	        //beim klicken SideBar öffnen
 	        $("#sideBarButton").click(function(){
 	            $("#SideBar").toggle();
 	            $("#SideBar").css("position","fixed");
@@ -281,7 +281,7 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
 	        });
 	        
 	        
-	        //beim hovern nach 2000ms SideBar Ã¶ffnen
+	        //beim hovern nach 2000ms SideBar öffnen
 	        $('#sideBarButton').hover(function () {
                 var expanding = $(this);
                 var timer = window.setTimeout(function () {
@@ -320,9 +320,9 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
 	<!--Die SideBar ist neben dem Center-Container auf der Home-Seite zu sehen ist, und ansonsten nur hervorguckt und ausfahrbar ist.-->
 	<div id="SideBar">
 	    <div id="sideBarInhalt">
-			<!--Die Legende zeigt die fÃ¼nf Standorte in ihren Farben. 
-			AuÃŸerden kommen hier beim hovern(onmouseover bzw. onmouseout) die JavaScript-Funktionen zum Zeigen und Verschwindenlassen zum Einsatz.
-			ZusÃ¤tzlich sind die LegendeneintrÃ¤ge verlinks, sodass man durch anklicken auf die Standortbeschreibungsseite gelangt.	-->
+			<!--Die Legende zeigt die fünf Standorte in ihren Farben. 
+			Außerden kommen hier beim hovern(onmouseover bzw. onmouseout) die JavaScript-Funktionen zum Zeigen und Verschwindenlassen zum Einsatz.
+			Zusätzlich sind die Legendeneinträge verlinks, sodass man durch anklicken auf die Standortbeschreibungsseite gelangt.	-->
             <div id="legende">
 				<a href="?site=bruecke">
 					<p 	style="color:grey;font-weight:bold;" 
@@ -362,7 +362,7 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
 			</div>
 			
 			<!--Dieser Container hat eine feste Breite, die wichtig ist, da die Inhalte prozentual ausgerichtet sind. 
-			Denn die Punkte der Standorte sollen immer an derselben Stelle der Karte erscheinen, auch, wenn die BildschirmauflÃ¶Ã¶sung oder das Zoom-In Level ein anderes ist-->
+			Denn die Punkte der Standorte sollen immer an derselben Stelle der Karte erscheinen, auch, wenn die Bildschirmauflöösung oder das Zoom-In Level ein anderes ist-->
             <div id="festerInhaltFuerUmriss">
 				<!--Die einzelnen Punkte haben die Javascript Funktionen zum Zeigen und Verschwinden-lassen der Tooltips sowie eine Link-Funktion(onclick), die den Benutzer auf die Standortbeschreibungsseite weiterleitet-->
                 <div 	id="punktBruecke" 
@@ -430,7 +430,7 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
                         <h3><u>Termine:</u></h3>
                     ');
                     
-					//FÃ¼r jedes der (hÃ¶chstens zwei) Elemente des Ergebnisses wird die while-Schleife mit der Ausgabe durchlaufen
+					//Für jedes der (höchstens zwei) Elemente des Ergebnisses wird die while-Schleife mit der Ausgabe durchlaufen
                     while($zeile = mysql_fetch_assoc($ergebnis)){
                         echo('<p><b>'.$zeile['terminzeit'].': </b></p>');
                         echo('<p>'.$zeile['terminbeschreibung'].'</p>');
@@ -441,7 +441,7 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
 		</div>
 		
 					<!-- Dies ist der Logout-Button, der in der SideBar erst erscheint, wenn man sich angemeldet hat.
-				Bei drÃ¼cken des Buttons, wird man auf die Home-Seite geleitet.-->
+				Bei drücken des Buttons, wird man auf die Home-Seite geleitet.-->
             <form style="text-align:right; position:absolute; right:20px; top:0px;" action="?site=home" method="post"> 
                 <input  id="logout" name="logout" type="submit" value="Abmelden"> 
             </form>
@@ -457,16 +457,16 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
 
             
             <?php
-                //Ã¼berprÃ¼fen, ob die SESSION Variable gesetzt ist
+                //überprüfen, ob die SESSION Variable gesetzt ist
                 if(isset($_SESSION['status'])){
-                    //wenn ja, dann wird ihr Wert in $status gespeichert. Der Wert sollte 0 fÃ¼r nicht angemeldet und 1 fÃ¼r angemeldet sein
+                    //wenn ja, dann wird ihr Wert in $status gespeichert. Der Wert sollte 0 für nicht angemeldet und 1 für angemeldet sein
                     $status=$_SESSION['status'];
                 }else{
                     //wenn nein, dann ist status 0
                     $status='0';
                 }
                     
-				//prÃ¼fen, ob der user angemeldet ist
+				//prüfen, ob der user angemeldet ist
                 if($status !='1'){
                 //wenn $status nicht 1 ist, dann ist der user nicht angemeldet und der LogoutButton wird nicht angezeigt
                 
@@ -491,14 +491,14 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
            
             
             <?php
-			// Wenn der LogoutButton gedrÃ¼ckt wurde, ist $_POST['logout'] gesetzt, da der input-submit-Button im Formular getÃ¤tigt wurde
+			// Wenn der LogoutButton gedrückt wurde, ist $_POST['logout'] gesetzt, da der input-submit-Button im Formular getätigt wurde
                 if(isset($_POST['logout'])){
 				
 					//der Statuswert wird auf 0 gesetzt, was abgemeldet bedeutet. Und in der SESSION-Variable gespeichert
                     $statuswert='0';
                     $_SESSION['status']=$statuswert;
 					
-					//AnschlieÃŸend wird die SESSION beendet
+					//Anschließend wird die SESSION beendet
                     session_destroy();
 					
                     //Und der User auf die Home-Seite weitergeleitet
@@ -514,10 +514,10 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
 		<?php
             /*  Das ?site-Attribut aus der URL wird mithilfe von $_GET['site'] geholt
             *   Zum Beispiel ist bei der Seite ...index.php?site=home die Variable home das ?site Attribut. 
-            *   Der Attribut-Name "site" ist selber ausgedacht und muss mit ? an die URL angehÃ¤ngt werden. 
-            *   Wenn mehrere Attribute angehÃ¤ngt werden sollen, dann wird das erste mit ? und die darauffolgenden mit & verbunden.
+            *   Der Attribut-Name "site" ist selber ausgedacht und muss mit ? an die URL angehängt werden. 
+            *   Wenn mehrere Attribute angehängt werden sollen, dann wird das erste mit ? und die darauffolgenden mit & verbunden.
             */
-            //ÃœberprÃ¼fung, ob das ?site-Attribut gesetzt wurde (is set)
+            //Überprüfung, ob das ?site-Attribut gesetzt wurde (is set)
     		if( isset($_GET['site']) ){ 
 					//wenn ja, dann wird die Variable in $site gespeichert
 			        $site = $_GET['site'];
@@ -530,7 +530,7 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
 			        include($site.'.php');
                  
 				 
-				 /* Die nachfolgenden if-Bedingungen sollen Ã¼berprÃ¼fen, auf welcher Seite man ist und dann in der Navigationsleiste die Kategorie, in der man sich befindet, farblich markieren.*/
+				 /* Die nachfolgenden if-Bedingungen sollen überprüfen, auf welcher Seite man ist und dann in der Navigationsleiste die Kategorie, in der man sich befindet, farblich markieren.*/
     			if($site=="home"){  
     			    
                     echo("<style> #listElement1 {
