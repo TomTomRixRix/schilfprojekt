@@ -1,4 +1,4 @@
-/*****************************************INHALTSVERZEICHNIS**************************************************************************************************************************************************************/
+﻿/*****************************************INHALTSVERZEICHNIS**************************************************************************************************************************************************************/
 
 /*                      1. allgemein
                         2. Animation                                                            
@@ -21,7 +21,7 @@
 /*                  1. allgemein gültig  START                                                   */
 
 html{
-                        background-image:url(images/noise.png);
+                        
 	                    width:100%;
 	                    height:auto;
 	                    font-family:Tahoma, Geneva, sans-serif,Arial,Time New Roman;
@@ -29,7 +29,6 @@ html{
         }
 
 body{
-
                         background: -moz-radial-gradient(center, circle farthest-corner, white 0%, #BDBDBD 75%, #848484 90%);
                         background: -webkit-radial-gradient(center, circle farthest-corner, white 0%, #BDBDBD 75%, #848484 90%);
                         background: -ms-radial-gradient(center, circle farthest-corner, white 0%, #BDBDBD 75%, #848484 90%);

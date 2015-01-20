@@ -1,4 +1,3 @@
-<!--Aturo:Tilman Masur.  -->
 <?php
 
 function parseToXML($htmlStr) // macht sonderzeichen sinnvoll
