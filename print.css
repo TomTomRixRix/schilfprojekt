@@ -1,0 +1,7 @@
+.no_print{
+	 display: none;
+}
+
+.print_this{
+	display: inline;
+}
