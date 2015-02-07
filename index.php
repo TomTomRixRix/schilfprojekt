@@ -19,7 +19,7 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">     <!--charset=ISO-8859-1-->
     
     <!--Das Stylesheet (stylesheet.css) für die Hauptseiten wird hier eingebunden-->
-	<link href="print.css" type="text/css" rel="stylesheet" media="screen, handheld" />
+	<link href="stylesheet.css" type="text/css" rel="stylesheet" media="screen, handheld" />
     <!--Hier wird das Stylesheet print.css eingebunden. print kommt zum Einsatz wenn man die Duckfunktion des Browsers nutzt.-->
     <link href="print.css" type="text/css" rel="stylesheet" media="print" />
 
