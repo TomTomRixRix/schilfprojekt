@@ -1,5 +1,4 @@
-<!--Auf dieser Seite werden die Ergebnisse bzw, Daten der Wasseranalyse, also chemischen Parameter, ausgegeben. Hierbei muss zwischen den Oberflächenwasserwerten und denen des Sedimentwassers unterschieden werden-->
-
+S<!--Auf dieser Seite werden die Ergebnisse bzw, Daten der Wasseranalyse, also chemischen Parameter, ausgegeben. Hierbei muss zwischen den Oberflächenwasserwerten und denen des Sedimentwassers unterschieden werden-->
 <div class="tabnavigation" style="clear: both;overflow: hidden;width: 100%;position: relative;">
     <!--Man kann mithilfe von zwei Tabs zwischen den Oberflächenwerten und den Sedimentwerten wechseln.
 	Dazu wird beim Anklicken das Attribut tab entweder auf "w" für Oberfläche oder "s" für Sediment gesetzt-->
@@ -598,8 +597,7 @@
             }
         ?>
     </div>
-    
-    <p>hell hinterlegte Zeilen sind Fr&uuml;hjahrswerte, dunkle Herbstwerte </p>
-</div>
-
-   
+    <div>
+        <p>hell hinterlegte Zeilen sind Fr&uuml;hjahrswerte, dunkle Herbstwerte </p>
+    </div>
+</div>   

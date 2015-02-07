@@ -4,7 +4,6 @@
 <!-- 
 Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten integriert.
 -->
-
 <head>
 	<title>Schilfprojekt</title>
     <!--Die keywords sind dafür, dass man die Schilfwebsite in Suchmaschinen findet.-->
@@ -20,8 +19,10 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">     <!--charset=ISO-8859-1-->
     
     <!--Das Stylesheet (stylesheet.css) für die Hauptseiten wird hier eingebunden-->
-	<link href="stylesheet.css" type="text/css" rel="stylesheet"/>
-    
+	<link href="print.css" type="text/css" rel="stylesheet" media="screen, handheld" />
+    <!--Hier wird das Stylesheet print.css eingebunden. print kommt zum Einsatz wenn man die Duckfunktion des Browsers nutzt.-->
+    <link href="print.css" type="text/css" rel="stylesheet" media="print" />
+
     <!--Das Stylesheet (newnavigationcss.css) für die Navigationsleiste wird hier eingebunden-->
     <link href="navi.css" type="text/css" rel="stylesheet"/>
     
@@ -38,16 +39,16 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
     
     
 </head>
+<!--Es wird ein div tag erstellt, dessen Inhalt nicht angezeigt wird. es reicht bis zum center-->
 
-
-<body align="center">
+<body align="center" >
     <?php
     //Die Session wird gestartet. Die Session ist später wichtig für die Login-Funktion für den Admin-Bereich. Durch sogenannte SESSION-Variablen können dann 
     session_start();
     ?>
 
     
-	<div id="Header">
+	<div id="Header" class="no_print">
 		<div id="Headline">
             <!--Über die ID "HeadlineBackground" wird das Hintergrundbild mit CSS in den Header eingebaut-->
             <div id="HeadlineBackground"></div>
@@ -62,11 +63,11 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
 	</div>
     
     <!--Trennlinie zwischen Header und Navigation-->
-	<div id="Line">
+	<div id="Line" class="no_print">
 	</div> 
 		
     <!--Hier beginnt die Navigationsleiste. Diese ist mithilfe einer ungeordneten Liste(ul) aufgebaut. Die einzelnen ListItems(li) beinhalten einen Link auf die verlinkten Unterseiten. Wenn die Kategorien sich nur ausfahren, aber nicht anklickbar sein sollen, dann wird kein href-Attribut gesetzt. Die ausfahrbaren Unterkategorien sind wiederum mit Listen und ListItems in den übergeordneten ListItems realisiert. Die href-Links ändern oder ergänzen nur das URL-Attribut ?site, was dann später - immer wenn die index-Seite aufgerufen wird - ausgelesen wird, sodass dann nur diese Unterseite includet wird. href="#" sollen noch tote Links darstellen, die demnächst gefüllt werden-->
-    <div id="na" >
+    <div id="na" class="no_print">
         <nav id="nav">
     	    <ul id="navigation" type="none">
                 <!--Home-->
@@ -508,8 +509,8 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
                 }
             ?>
 	</div>
-	
-    <div id="center">
+
+    <div id="center" class="print_this">
         
 		<?php
             /*  Das ?site-Attribut aus der URL wird mithilfe von $_GET['site'] geholt
@@ -613,7 +614,7 @@ Diese index.php Seite ist die Hauptwebsite, in die alle anderen Unterseiten inte
 </div>
 
 	<!--Im Footer befinden sich die Teilnehmenden Institutionen der Schilfprojektes sowie die Sponsoren, jeweils mit verlinktem Bild-->
-	<div id="Footer">
+	<div id="Footer" class="no_print">
         <a href="http://www.thomas-mann-schule.de/" target="_blank"><div class="Sponsor" id="tms"></div></a>
         <a href="http://www.possehl-stiftung.de/" target="_blank"><div class="Sponsor" id="possehl"></div></a>
 		<a href="http://www.lola.uni-luebeck.de/" target="_blank"><div class="Sponsor" id="lola"></div></a>
