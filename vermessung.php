@@ -90,7 +90,6 @@
                     FROM biologischeMittelwerte
                     ORDER BY StandortID DESC, Datum DESC';
                     
-
     }
                     
     /*FLUSSABWÄRTS*/                
