@@ -225,6 +225,146 @@
         </tr>
     </tbody>
 </table>
+<h3>2014</h3>
+<table name="2014" id="makrotabelle">
+	<thead>
+		<tr>
+			<th>Gro&szlig; Sarau</th>
+			<th></th>
+            <th>Absalonshorst</th>
+			<th></th>
+            <th>Kleiner See</th>
+			<th></th>
+            <th>Eichholz</th>
+			<th></th>
+			<th>Wallbrechtbrücke</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>Tubifex tubifex – Schlammröhrenwurm (1)</td>
+			<td>3,5</td>
+			<td>Restliche Eintagsfliegenlarven (3)</td>
+			<td>2,0</td>
+			<td>Tubifex tubifex – Schlammröhrenwurm(3)</td>
+			<td>3,5</td>
+			<td>Tubifex tubifex – Schlammröhrenwurm (3)</td>
+			<td>3,5</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>Viviparus viviparus – Sumpfdeckelschnecke (4)</td>
+			<td>2,0</td>
+			<td>Chironomus thummi u. plumosus Gruppe - Rote Zuckmückenlarven (2)</td>
+			<td>3,4</td>
+			<td>Familie Unionidae – Flussmuscheln (2)</td>
+			<td>2,0</td>
+			<td>Piscicola geometra - Gemeiner Fischegel (1)</td>
+			<td>2,0</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>Planorbarius corneus – Posthomschnecke (1)</td>
+			<td>2,0</td>
+			<td></td>
+			<td></td>
+			<td>Gammarus (fossarum) pulex (1)</td>
+			<td>2,0</td>
+			<td>Planorbarius corneus – Posthom-schnecke (1)</td>
+			<td>2,0</td>
+		</tr>
+		
+		<tr>
+			<td></td>
+			<td></td>
+			<td>Gammarus (fossarum) pulex (1)</td>
+			<td>2,0</td>
+			<td></td>
+			<td></td>
+			<td>Familie Baetidae (1)</td>
+			<td>2,0</td>
+			<td>Pisidium sp.- Erbsenmuschel (1)</td>
+			<td>1,8</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>Restliche Eintagsfliegenlarven (1)</td>
+			<td>2,0</td>
+			<td></td>
+			<td></td>
+			<td>Plectrocnemia sp. (1)</td>
+			<td>1,5</td>
+			<td>Dreissena polymorpha – Wandermuschel (3)</td>
+			<td>2,2</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>Rote Zuckmückenlarven (1)</td>
+			<td>3,4</td>
+			<td></td>
+			<td></td>
+			<td>Lumbriculus variegatus (1)</td>
+			<td>3,0</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>Bithynia tentaculata - (Langfühlerige Schnauzenschnecke) (1)</td>
+			<td>2,3</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>Lymnea perega f.ovata - Eiförmige Schlammschnecke (1)</td>
+			<td>2,5</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>Chironomus thummi u. plumosus Gruppe - Rote Zuckmückenlarven (3)</td>
+			<td>3,4</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>Saprobienindex II-III (2,3)</td>
+			<td></td>
+			<td>Saprobienindex II-III (2,56)</td>
+			<td></td>
+			<td>Saprobienindex II-III (2,71)</td>
+			<td></td>
+			<td>Saprobienindex II-III (2,54)</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
 
 </div>
 
