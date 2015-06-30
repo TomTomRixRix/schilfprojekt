@@ -81,12 +81,12 @@ include('aktiviereAdminSideBar.php');
                                 <option value="Absalonshorst">Absalonshorst</option>
                                 <option selected="true" value="Gross Sarau">Gross Sarau</option>
                                 <option value="Wakenitzbruecke">Wakenitzbr&uuml;cke</option>');
-                }elseif($zeile['Standort']=="Wakenitzbruecke"){
+                }elseif($zeile['Standort']=="Wallbrechtbruecke"){
                         echo('  <option value="Eichholz">Eichholz</option>
                                 <option value="Kleiner See">Kleiner See</option>
                                 <option value="Absalonshorst">Absalonshorst</option>
                                 <option value="Gross Sarau">Gross Sarau</option>
-                                <option selected="true" value="Wakenitzbruecke">Wakenitzbr&uuml;cke</option>');
+                                <option selected="true" value="Wallbrechtbruecke">Wallbrechtbr&uuml;cke</option>');
                 }
                                 
                 echo('            </select>
